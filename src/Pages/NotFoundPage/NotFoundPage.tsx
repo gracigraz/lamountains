@@ -1,7 +1,7 @@
 import "./NotFoundPage.scss";
 
 //this page renders a basic 404 error page with a message and an error code
-function NotFoundPage() {
+const NotFoundPage: React.FC = () => {
   return (
     <main className="not-found">
       <div className="not-found__round-container">

@@ -1,4 +1,4 @@
-import "./Header.scss";
+// import "./Header.scss";
 import logo from "../../assets/images/BrainFlix-logo.svg";
 import { NavLink } from "react-router-dom";
 

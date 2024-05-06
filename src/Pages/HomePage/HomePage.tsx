@@ -1,12 +1,12 @@
 import React from "react";
-import logo from "./logo.svg";
-import "./App.css";
+import "./HomePage.scss";
+import Footer from "../../components/Footer/Footer";
 
-function Home() {
+const Home: React.FC = () => {
 	return (
 		<main className="Home">
 			<header className="App-header">
-				<img src={logo} className="App-logo" alt="logo" />
+				{/* <img src={logo} className="App-logo" alt="logo" /> */}
 				<p>
 					Edit <code>src/App.tsx</code> and save to reload.
 				</p>
@@ -24,11 +24,11 @@ function Home() {
 					hendrerit ac, tristique ut quam. Vivamus suscipit dignissim tortor nec congue.
 				</p>
 			</section>
-			<footer>
-				<img src="" alt=""/>
-				<p>LOSANGELES MOUNTAINS</p>
-				<p>COPYRIGHT 2016. ALL RIGHTS RESERVED</p>
-			</footer>
+            <section>
+                <p>Cras scelerisque id quam sed dignissim Pellentesque urna nunc, gravida quis hendrerit ac, tristique ut quam. Vivamus suscipit dignissim tortor nec congue. </p>
+            </section>
+			<Footer/>
+
 		</main>
 	);
 }

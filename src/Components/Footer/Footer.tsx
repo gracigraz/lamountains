@@ -1,5 +1,5 @@
 
-import "./Header.scss";
+import "./Footer.scss";
 import logo from "../../assets/images/BrainFlix-logo.svg";
 import { NavLink } from "react-router-dom";
 
