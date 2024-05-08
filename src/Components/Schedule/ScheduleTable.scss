@@ -1,0 +1,33 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/typography" as *;
+@use "../../styles/partials/mixins" as *;
+
+.schedule {
+	padding: 1rem;
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	height: 200px;
+	color: $black;
+
+	&__item {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		font-size: 1rem;
+		font-family: "Lato";
+		font-weight: 200;
+		padding: 0.625rem;
+		flex-basis: 50px;
+	}
+
+	&__item:nth-child(1),
+	&__item:nth-child(2) {
+		flex-grow: 1;
+	}
+
+	&__item:nth-child(3),
+	&__item:nth-child(4) {
+		flex-grow: 2;
+	}
+}

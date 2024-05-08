@@ -4,18 +4,23 @@
 
 
 .header{
-   background-color: $white;;
+
     &__nav{
         color: $white;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
+        background-color: $white;
+        &--top{
+            background-color: transparent;
+        }
 
     }
     &__container{
         display: flex;
         justify-content: space-between;
         align-items: center;
+        
     }
     &__logo-wrapper{
         // border-radius: 2rem;
@@ -27,7 +32,6 @@
     &__logo{
         width: 42px;
         // 
-      
     }
     &__company-name{
         font-family: "Bebas Neue";
@@ -41,29 +45,30 @@
         margin-block-start: 0;
         margin-block-end: 0;
         line-height: 18px;
+        &--top{
+            display:none;
+        }
     }
     &__company-name--highlight{
         color: $gray;
         letter-spacing: 0.5px;
     }
-    &__list-item--link{
+    &__list-link{
         font-style: italic;
         color: $blue;
         font-family: "Lato";
         font-size: 12px;
         font-weight: 600;
-     
+        &--top{
+            color: white;
+        }
     }
     &__list-item{
         padding: .5rem;
-       
-        
-
+        list-style:none;
     }
     &__list{
         display: flex;
         text-decoration: none;
-
     }
-
 }
